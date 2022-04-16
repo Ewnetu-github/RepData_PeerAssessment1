@@ -117,9 +117,9 @@ Both estimates (mean and median) are the same in the original and imputed data. 
 To answer this question we may use the summary values for the total number of steps in the two datasets:  *total_steps_perday* and  *total_imputed_steps_perday*. 
 
 ```{r}
-# Original data
+# summary based on the original data
 summary(total_steps_perday)
-# Imputed data 
+# summary based on the Imputed data 
 summary(total_imputed_steps_perday)
 # take the difference of the two 
 summary(total_imputed_steps_perday) - summary(total_steps_perday)
