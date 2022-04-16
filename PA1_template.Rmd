@@ -101,7 +101,6 @@ hist(total_imputed_steps_perday, main="Total number of steps per day\n after imp
 ```
 
 - The mean total number of steps taken per day:
-# mean 
 ```{r}
 mean(total_imputed_steps_perday)
 ```
