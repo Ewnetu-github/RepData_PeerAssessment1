@@ -91,7 +91,6 @@ activity.imputed$steps[na.steps] <- val[, 2]
 #To make sure that all the missing values are correctly imputed find the NA values for the imputed data.
 sum(!complete.cases(activity.imputed))
 ```
-
 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
 - Histogram of the total number of steps taken per day. 
@@ -151,5 +150,4 @@ mean_imputed_steps_datype <-aggregate(steps~ interval + date_type, data = activi
 # lattice package 
 library(lattice)
 xyplot(mean_imputed_steps_datype$steps ~ mean_imputed_steps_datype$interval|mean_imputed_steps_datype$date_type, main="Average Steps per Day by Interval", xlab="Interval", ylab="Steps",layout=c(1,2), type="l")
-
 ```
