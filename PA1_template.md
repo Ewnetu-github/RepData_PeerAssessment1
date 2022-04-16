@@ -147,7 +147,6 @@ sum(!complete.cases(activity.imputed))
 ```
 ## [1] 0
 ```
-
 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
 - Histogram of the total number of steps taken per day. 
@@ -161,7 +160,6 @@ hist(total_imputed_steps_perday, main="Total number of steps per day\n after imp
 ![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 - The mean total number of steps taken per day:
-# mean 
 
 ```r
 mean(total_imputed_steps_perday)
@@ -189,7 +187,7 @@ To answer this question we may use the summary values for the total number of st
 
 
 ```r
-# Original data
+# summary based on the original data
 summary(total_steps_perday)
 ```
 
@@ -199,7 +197,7 @@ summary(total_steps_perday)
 ```
 
 ```r
-# Imputed data 
+# summary based on the Imputed data 
 summary(total_imputed_steps_perday)
 ```
 
